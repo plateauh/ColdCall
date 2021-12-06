@@ -63,6 +63,7 @@
                     </view>
                     <connections>
                         <outlet property="nameLabel" destination="QEH-Dr-f9d" id="7xl-o8-wSe"/>
+                        <outlet property="numberLabel" destination="XsM-Wy-vLO" id="9YI-92-V4j"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

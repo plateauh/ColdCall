@@ -14,10 +14,23 @@ class ViewController: UIViewController {
     ]
     
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var numberLabel: UILabel!
     
     @IBAction func coldCallPressed(_ sender: UIButton) {
         let randomIdx = Int.random(in: 0..<codingDojoPeople.count)
         nameLabel.text = codingDojoPeople[randomIdx]
+        
+        let randomNum = Int.random(in: 1...5)
+        numberLabel.text = String(randomNum)
+        switch randomNum {
+            case 1: numberLabel.textColor = UIColor.red
+            case 2: numberLabel.textColor = UIColor.red
+            case 3: numberLabel.textColor = UIColor.orange
+            case 4: numberLabel.textColor = UIColor.orange
+            case 5: numberLabel.textColor = UIColor.green
+            default: numberLabel.textColor = UIColor.black
+        }
+        numberLabel.isHidden = false
     }
     
     override func viewDidLoad() {
