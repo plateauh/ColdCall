@@ -22,7 +22,6 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameLabel.text = codingDojoPeople[0] // sorry I want to be the first always haha
     }
 
 

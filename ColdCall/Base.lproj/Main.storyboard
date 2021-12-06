@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Person Name Here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEH-Dr-f9d">
-                                <rect key="frame" x="8" y="52" width="381" height="57.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Ready?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QEH-Dr-f9d">
+                                <rect key="frame" x="107" y="44" width="201.5" height="57.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="48"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -37,17 +37,27 @@
                                     <action selector="coldCallPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Wkz-cl-04k"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XsM-Wy-vLO">
+                                <rect key="frame" x="8" y="396.5" width="181.5" height="103"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="86"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="iAB-OT-EvI" secondAttribute="bottom" constant="8" id="1GC-aB-n2Z"/>
+                            <constraint firstItem="XsM-Wy-vLO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="5Tr-Yx-dcW"/>
                             <constraint firstItem="QEH-Dr-f9d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9E3-bo-KVZ"/>
                             <constraint firstItem="QEH-Dr-f9d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="KLu-JB-PoY"/>
                             <constraint firstItem="QEH-Dr-f9d" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="Obj-IK-niD"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XsM-Wy-vLO" secondAttribute="trailing" constant="8" id="UFD-uD-1Fg"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iAB-OT-EvI" secondAttribute="trailing" constant="50" id="Uha-MY-Myh"/>
+                            <constraint firstItem="XsM-Wy-vLO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e9h-u0-zPH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QEH-Dr-f9d" secondAttribute="trailing" constant="8" id="fZb-bQ-aAN"/>
                             <constraint firstItem="iAB-OT-EvI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="mpv-bU-uR8"/>
+                            <constraint firstItem="XsM-Wy-vLO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="sge-uh-TK0"/>
                             <constraint firstItem="iAB-OT-EvI" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="zdZ-3Q-gnn"/>
                         </constraints>
                     </view>
